@@ -1,4 +1,4 @@
 FROM nginx:alpine
 EXPOSE 80
-COPY temp1 /usr/share/nginx/html
+COPY temp1 /var/www/html
 CMD ["nginx","-g", "daemon off;"]
