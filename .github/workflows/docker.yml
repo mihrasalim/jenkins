@@ -22,3 +22,6 @@ jobs:
 
       - name: Run Docker image
         run: docker run -d --name my-nginx -p 8080:80 my-app:latest
+        
+      - name: Test nginx is responding
+        run: curl -f http://localhost:8080
