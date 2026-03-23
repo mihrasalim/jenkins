@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build the Docker image
-        run: docker build -t yekqpapp4q/akhil
+        run: docker build -t yekqpapp4q/akhil .
