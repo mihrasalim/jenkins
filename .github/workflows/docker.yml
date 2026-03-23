@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build  -f nginx -t image:latest
+        run: docker build  -f nginx -t my-app:latest .
 
       - name: Run Docker image
-        run: docker run -d --name container -p 3212:80 image:latest
+        run: docker run --rm my-app:latest
