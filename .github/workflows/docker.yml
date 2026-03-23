@@ -21,5 +21,5 @@ jobs:
         run: docker build  -f nginx -t my-app:latest .
 
       - name: Run Docker image
-        run: docker run -d --name my-nginx -p 8080:80 my-app:latest
+        run: docker run -d --name my-nginx -p 1232:80 my-app:latest
         
